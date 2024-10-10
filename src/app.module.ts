@@ -8,6 +8,7 @@ import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { CustomerModule } from './customer/customer.module';
 import { CbModule } from './cb/cb.module';
+import { ProjectModule } from './project/project.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { CbModule } from './cb/cb.module';
     AuthModule,
     CustomerModule,
     CbModule,
+    ProjectModule,
   ],
   controllers: [AppController],
   providers: [AppService],
