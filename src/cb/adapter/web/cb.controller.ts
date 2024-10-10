@@ -1,5 +1,13 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
-import { CbService } from './cb.service';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
+import { CbService } from '../../cb.service';
 import { CreateCbDto } from './dto/create-cb.dto';
 import { UpdateCbDto } from './dto/update-cb.dto';
 

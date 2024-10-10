@@ -8,7 +8,6 @@ import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { CustomerModule } from './customer/customer.module';
 import { CbModule } from './cb/cb.module';
-import { CbModule } from './cb/cb.module';
 
 @Module({
   imports: [

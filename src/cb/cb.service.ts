@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { CreateCbDto } from './dto/create-cb.dto';
-import { UpdateCbDto } from './dto/update-cb.dto';
+import { CreateCbDto } from './adapter/web/dto/create-cb.dto';
+import { UpdateCbDto } from './adapter/web/dto/update-cb.dto';
 
 @Injectable()
 export class CbService {

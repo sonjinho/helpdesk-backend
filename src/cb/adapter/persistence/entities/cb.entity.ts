@@ -1,31 +1,39 @@
-import { IsEmail, IsISO31661Alpha2, IsString } from 'class-validator';
+import { Column, Entity, Index, PrimaryGeneratedColumn } from 'typeorm';
 
-export class CertificationBody {
-  private readonly id: string;
-  @IsString()
-  private readonly name: string;
-  @IsISO31661Alpha2()
-  private readonly country: string;
-  @IsString()
-  private readonly address: string;
-  @IsString()
-  private readonly phone: string;
-  @IsEmail()
-  private readonly email: string;
+@Entity()
+export class CertificationBodyEntity {
+  @PrimaryGeneratedColumn('uuid')
+  private id: string;
+  @Index({ unique: true })
+  @Column()
+  private name: string;
+  @Index()
+  @Column()
+  private country: string;
+  @Column()
+  private address: string;
+  @Column()
+  private phone: string;
+  @Column()
+  private email: string;
+
   constructor(
     id: string,
     name: string,
+    country: string,
     address: string,
     phone: string,
     email: string,
   ) {
     this.id = id;
     this.name = name;
+    this.country = country;
     this.address = address;
     this.phone = phone;
     this.email = email;
   }
 
+  // Getters
   public getId(): string {
     return this.id;
   }
