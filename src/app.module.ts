@@ -9,6 +9,9 @@ import { UserModule } from './user/user.module';
 import { CustomerModule } from './customer/customer.module';
 import { CbModule } from './cb/cb.module';
 import { ProjectModule } from './project/project.module';
+import { TenantModule } from './tenant/tenant.module';
+import { TaskModule } from './task/task.module';
+import { WorkflowModule } from './workflow/workflow.module';
 
 @Module({
   imports: [
@@ -24,6 +27,9 @@ import { ProjectModule } from './project/project.module';
     CustomerModule,
     CbModule,
     ProjectModule,
+    TenantModule,
+    TaskModule,
+    WorkflowModule,
   ],
   controllers: [AppController],
   providers: [AppService],
