@@ -1,4 +1,4 @@
-import { SnsType } from 'src/customer/domain/customer.sns';
+import { SnsType } from 'src/crm/domain/customer.sns';
 import { PrimaryGeneratedColumn, Column, Entity } from 'typeorm';
 
 @Entity()

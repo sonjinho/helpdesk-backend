@@ -1,4 +1,8 @@
 import { Module } from '@nestjs/common';
+import { TaskModule } from './task/task.module';
+import { TimelineModule } from './timeline/timeline.module';
 
-@Module({})
+@Module({
+  imports: [TaskModule, TimelineModule]
+})
 export class ProjectModule {}
