@@ -17,6 +17,7 @@ import { SettingModule } from './setting/setting.module';
 import { MyPageModule } from './my-page/my-page.module';
 import { ReportModule } from './report/report.module';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { HelpDeskModule } from './help-desk/help-desk.module';
 
 @Module({
   imports: [
@@ -40,6 +41,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
     MyPageModule,
     ReportModule,
     DashboardModule,
+    HelpDeskModule,
   ],
   controllers: [AppController],
   providers: [AppService],
