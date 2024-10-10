@@ -1,6 +1,6 @@
 import { Inject, Injectable, Logger } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import { UserUseCase } from 'src/user/application/port/in/UserUseCase';
+import { UserUseCase } from 'src/user/application/port/in/user.usecase';
 import { isHashValid } from 'src/util/cipher.util';
 
 @Injectable()

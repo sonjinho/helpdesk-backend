@@ -1,6 +1,6 @@
-import { IsNotEmpty, IsString } from 'class-validator';
-import { CustomerContact } from './CustomerContact';
-import { CustomerSns } from './CustomerSns';
+import { IsISO31661Alpha2, IsNotEmpty, IsString } from 'class-validator';
+import { CustomerContact } from './customer.contacts';
+import { CustomerSns } from './customer.sns';
 
 export class Customer {
   private id: string;
@@ -8,6 +8,7 @@ export class Customer {
   @IsNotEmpty()
   private name: string;
   private company: string;
+  @IsISO31661Alpha2()
   private country: string;
   private contacts: CustomerContact[];
   private sns: CustomerSns[];

@@ -1,8 +1,8 @@
 import { ClassProvider, Module } from '@nestjs/common';
-import { UserService } from './application/service/UserService';
-import { UserController } from './adapter/web/UserController';
+import { UserService } from './application/service/user.service';
+import { UserController } from './adapter/web/user.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { UserEntity } from './adapter/persistence/User.entity';
+import { UserEntity } from './adapter/persistence/user.entity';
 
 const userUseCase: ClassProvider = {
   provide: 'userUseCase',
